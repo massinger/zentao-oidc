@@ -1748,7 +1748,8 @@ class OpenIDConnectClient
      * @return object
      */
     public function getAccessTokenPayload() {
-        return $this->decodeJWT($this->accessToken, 1);
+        //return $this->decodeJWT($this->accessToken, 1);
+		return $this->accessToken;
     }
 
     /**
